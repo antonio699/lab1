@@ -1,0 +1,200 @@
+     NTUSER.DAT{f5b13603-4b48-11e6-80cb-e41d2d012050}.TxR.2.regtrans-ms
+ NTUSER.DAT{f5b13603-4b48-11e6-80cb-e41d2d012050}.TxR.blf
+ NTUSER.DAT{f5b13604-4b48-11e6-80cb-e41d2d012050}.TM.blf
+ NTUSER.DAT{f5b13604-4b48-11e6-80cb-e41d2d012050}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{f5b13604-4b48-11e6-80cb-e41d2d012050}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ ntuser.pol
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+163274@lab200ab-ws21 MINGW64 ~
+$ clear
+
+163274@lab200ab-ws21 MINGW64 ~
+$ pwd
+/c/Users/163274
+
+163274@lab200ab-ws21 MINGW64 ~
+$ cd Downloads
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads
+$ add .
+bash: add: command not found
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads
+$ pwd
+/c/Users/163274/Downloads
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads
+$ git init
+Initialized empty Git repository in C:/Users/163274/Downloads/.git/
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git add .
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git commit -m"Initial commit"
+[master (root-commit) b23b12e] Initial commit
+ Committer: petar.koloski@students.finki.ukim.mk <petar.koloski@students.finki.ukim.mk>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1 insertion(+)
+ create mode 100644 desktop.ini
+ create mode 100644 lab1/l1.txt
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git commit -m"modify l1.txt"
+On branch master
+Changes not staged for commit:
+        modified:   lab1/l1.txt
+
+no changes added to commit
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git add .
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git commit -m"modify l1.txt"
+[master e5c63c6] modify l1.txt
+ Committer: petar.koloski@students.finki.ukim.mk <petar.koloski@students.finki.ukim.mk>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git remote add origin https://github.com/antonio699/lab1.git
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git push -u origin master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 764 bytes | 127.00 KiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/antonio699/lab1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git fetch origin master
+From https://github.com/antonio699/lab1
+ * branch            master     -> FETCH_HEAD
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git reset --hard origin/master
+HEAD is now at e5c63c6 modify l1.txt
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git checkout -b logging
+Switched to a new branch 'logging'
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (logging)
+$ git log
+commit e5c63c6214daef04636a753869817c899ec70bce (HEAD -> logging, origin/master, master)
+Author: petar.koloski@students.finki.ukim.mk <petar.koloski@students.finki.ukim.mk>
+Date:   Wed Mar 21 17:15:32 2018 +0100
+
+    modify l1.txt
+
+commit b23b12e7a06dddc2ded5877162341cb33cd0fb73
+Author: petar.koloski@students.finki.ukim.mk <petar.koloski@students.finki.ukim.mk>
+Date:   Wed Mar 21 17:13:30 2018 +0100
+
+    Initial commit
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (logging)
+$ git push origin logging
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/antonio699/lab1.git
+ * [new branch]      logging -> logging
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (logging)
+$ git add .
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (logging)
+$ git commit -m"izlezot"
+[logging 899c5cd] izlezot
+ Committer: petar.koloski@students.finki.ukim.mk <petar.koloski@students.finki.ukim.mk>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 10 insertions(+)
+ create mode 100644 lab1/log.txt
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (logging)
+$ git push origin logging
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 511 bytes | 127.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/antonio699/lab1.git
+   e5c63c6..899c5cd  logging -> logging
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (logging)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git merge logging
+Updating e5c63c6..899c5cd
+Fast-forward
+ lab1/log.txt | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 lab1/log.txt
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/antonio699/lab1.git
+   e5c63c6..899c5cd  master -> master
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (master)
+$ git checkout -b allcomands
+Switched to a new branch 'allcomands'
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (allcomands)
+$ ^C
+
+163274@lab200ab-ws21 MINGW64 ~/Downloads (allcomands)
+$
