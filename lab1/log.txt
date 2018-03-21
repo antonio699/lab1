@@ -1,0 +1,10 @@
+Author: petar.koloski@students.finki.ukim.mk <petar.koloski@students.finki.ukim.mk>
+Date:   Wed Mar 21 17:15:32 2018 +0100
+
+    modify l1.txt
+
+commit b23b12e7a06dddc2ded5877162341cb33cd0fb73
+Author: petar.koloski@students.finki.ukim.mk <petar.koloski@students.finki.ukim.mk>
+Date:   Wed Mar 21 17:13:30 2018 +0100
+
+    Initial commit
